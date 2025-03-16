@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Range Slider</title>
+    <link rel="stylesheet" href="assets/css/range-slider-js.min.css">
+</head>
+<body>
+
+    <div class="slider-container">
+        <h1>Range Slider</h1>
+        <div class="slider-wrapper">
+            <div class="input-wrapper">
+                <input type="text" class="form-control current-value-min" value="200" />
+                <input type="text" class="form-control current-value-max" value="800" />
+            </div>
+            <div class="range-slider" se-min="0" se-max="1000" se-step="10" aria-label="Price range">
+                <div class="slider-line"><span></span></div>
+                <div class="slider-touch slider-touch-left" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="200" aria-label="Minimum value"></div>
+                <div class="slider-touch slider-touch-right" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="800" aria-label="Maximum value"></div>
+            </div>
+            <div class="result">Min: 20 Max: 1000</div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <h1>Range Slider</h1>
+        <div class="slider-wrapper">
+            <div class="input-wrapper">
+                <input type="text" class="form-control current-value-min" value="200" />
+                <input type="text" class="form-control current-value-max" value="800" />
+            </div>
+            <div class="range-slider" se-min="0" se-max="1000" se-step="10" aria-label="Volume control">
+                <div class="slider-line"><span></span></div>
+                <div class="slider-touch slider-touch-left" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="200" aria-label="Minimum volume"></div>
+                <div class="slider-touch slider-touch-right" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="800" aria-label="Maximum volume"></div>
+            </div>
+            <div class="result">Min: 20 Max: 1000</div>
+        </div>
+    </div>
+    <script src="assets/js/range-slider-js.js"></script>
+</body>
+</html>
