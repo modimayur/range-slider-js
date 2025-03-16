@@ -1,11 +1,12 @@
+
 # Accessible Range Slider
 
-Check out the live demo: [Demo Link](https://codepen.io/modimayur/full/jEOYdyX) <!-- Replace with an actual link -->
+
+Check out the live demo: [Demo Link](https://codepen.io/modimayur/full/jEOYdyX)
 
 An **accessible**, **customizable**, and **mobile-friendly** range slider built with **Vanilla JavaScript**. This slider supports dual handles, keyboard navigation, and ARIA attributes for improved accessibility.
 
-![Range Slider Demo](https://github.com/modimayur/range-slider-js/blob/main/screenshot/range-slider-js-screenshot.png) <!-- Replace with an actual screenshot or GIF -->
-
+![Range Slider Demo](https://github.com/modimayur/range-slider-js/blob/main/screenshot/range-slider-js-screenshot.png)
 
 # Features
 - **Dual Handles:** Select a range with two draggable handles.
@@ -17,17 +18,9 @@ An **accessible**, **customizable**, and **mobile-friendly** range slider built 
 
 
 ## Installation
-
-### Via NPM
-You can install the slider as an NPM package:
-```bash
-npm install accessible-range-slider
-```
-
-### Manual Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/accessible-range-slider.git
+   git clone https://github.com/modimayur/range-slider-js.git
    ```
 2. Include the CSS and JavaScript files in your project:
    ```html
@@ -36,6 +29,8 @@ npm install accessible-range-slider
    ```
 
 ---
+
+
 
 ## Usage
 
@@ -58,6 +53,8 @@ npm install accessible-range-slider
 </div>
 ```
 
+
+
 ### Initialize the Slider
 ```javascript
 document.addEventListener("DOMContentLoaded", () => {
@@ -65,8 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     sliders.forEach((slider) => new AccessibleRangeSlider(slider));
 });
 ```
-
----
 
 ## Customization
 
@@ -86,12 +81,9 @@ You can customize the slider's appearance using CSS variables:
 ### JavaScript Options
 Pass options to the `AccessibleRangeSlider` constructor:
 ```javascript
-const slider = new AccessibleRangeSlider(sliderElement, {
-    min: 0,
-    max: 1000,
-    step: 10,
-    initialMin: 200,
-    initialMax: 800,
+document.addEventListener("DOMContentLoaded", () => {
+  const sliders = document.querySelectorAll(".range-slider");
+  sliders.forEach((slider) => new AccessibleRangeSlider(slider));
 });
 ```
 
